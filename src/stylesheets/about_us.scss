@@ -1,0 +1,175 @@
+/*оболочка*/
+.wrapper {
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+/*шапка и грид-контейнер для лого и меню с разделами*/
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(auto, 579px) minmax(auto, 1148px);
+  align-items: center;
+  background-color: #000000;
+  gap: 1px;
+  border-bottom: 1px solid #000000;
+}
+
+.header_logo {
+  height: 90px;
+  background-color: pink;
+  grid-column: 1 / 2;
+}
+
+.header_menu {
+  height: 90px;
+  grid-column: 2 / 3;
+}
+
+/*грид-контейнер для разделов меню внутри шапки*/
+.header_list {
+  display: grid;
+  grid-template-columns: repeat(4, 287px);
+  grid-template-rows: 1fr;
+  justify-items: start;
+  background-color: pink;
+}
+
+/*элементы меню (элементы грид-контейнера) шапки*/
+.header_list li {
+  display: flex;
+  border-left: 1px solid #000000;
+  padding: 30px 0px 35px 13px;
+  width: 100%;
+  max-width: 274px;
+  background: red;
+}
+
+/*убираем левую границу у первого элемента меню шапки, чтобы сохранить линейки*/
+.header_list li:first-child {
+  border-left: none;
+}
+
+/*задаем стили элементу меню (разделу) внутри шапки*/
+.header_link {
+  font-family: Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main {
+  background-color: pink;
+}
+
+/*задаем стили бегущей строки*/
+.running_line {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  height: 90px;
+}
+
+.content {
+  display: flex;
+}
+
+.block {
+  display: grid;
+}
+
+.block--first {
+  grid-template-columns: 33.5% 66.5%;
+  grid-template-rows: 300px 326px;
+}
+
+.block--second {
+  grid-template-columns: 33.5% 33.3% 33.3%;
+  grid-template-rows: 500px;
+  border-bottom: 1px solid #000000;
+}
+
+.cell--first {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 70px 0px 0px 15px;
+}
+
+.cell--second {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 70px 90px 0px 0px;
+}
+
+.cell--third {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 0px 0px 0px 15px;
+}
+
+.cell--fourth {
+  grid-area: 2 / 2 / 3 / 3;
+  padding-right: 90px;
+  padding: 0px 73px 0px 0px;
+}
+
+.cell--fifth {
+  grid-area: 1 / 1 / 1 / 2;
+  padding-right: 90px;
+  padding: 0px 170px 0px 15px;
+}
+
+.cell--sixth {
+  grid-area: 1 / 2 / 1 / 3;
+  padding-right: 90px;
+  padding: 0px 238px 0px 0px;
+}
+
+.cell--seventh {
+  grid-area: 1 / 3 / 1 / 3;
+  padding-right: 90px;
+  padding: 0px 238px 0px 0px;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 196px;
+  line-height: 240px;
+  font-weight: 300;
+  color: #000000;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.running_line h2 {
+  font-family: Helvetica;
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.footer h2 {
+  font-family: Helvetica;
+  font-size: 33px;
+  max-width: 500px;
+  line-height: 44px;
+  font-weight: 300;
+  margin: 0;
+  padding: 21px 0px 0 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: pink;
+  height: 289px;
+}
