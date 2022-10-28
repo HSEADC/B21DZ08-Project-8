@@ -1,16 +1,16 @@
 body.zaglushka {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   background: #fff;
   color: #000;
 }
 
-// header {
-//   position: relative;
-//   margin: 100px 0 25px 0;
-//   font-size: 2.3em;
-//   text-align: center;
-//   letter-spacing: 7px;
-// }
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 2px;
+}
 
 #form {
   position: relative;
@@ -61,7 +61,8 @@ textarea {
 }
 
 button {
-  width: 504px;
+  margin-top: 15px;
+  width: 472px;
   height: 53px;
   border: none;
   border-radius: 6px;

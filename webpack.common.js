@@ -79,6 +79,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/index.html',
+      filename: './index.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/zaglushka.html',
       filename: './zaglushka.html',
       chunks: ['index']
