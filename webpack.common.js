@@ -94,12 +94,12 @@ module.exports = {
     }),
 
     // About us
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about_us.html',
-      filename: './about_us.html'
-    }),
+    //    new HtmlWebpackPlugin({
+    //      hash: true,
+    //      scriptLoading: 'blocking',
+    //      template: './src/about_us.html',
+    //      filename: './about_us.html'
+    //    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
