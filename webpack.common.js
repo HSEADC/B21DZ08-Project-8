@@ -80,7 +80,7 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/zaglushka.html',
-      filename: './zagluska.html',
+      filename: './zaglushka.html',
       chunks: ['index']
     }),
 
