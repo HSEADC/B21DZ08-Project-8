@@ -1,0 +1,55 @@
+/*шапка и грид-контейнер для лого и меню с разделами*/
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(auto, 579px) minmax(auto, 1148px);
+  align-items: center;
+  background-color: #000000;
+  gap: 1px;
+  border-bottom: 1px solid #000000;
+
+  .header_logo {
+    height: 90px;
+    background-color: pink;
+    grid-column: 1 / 2;
+  }
+}
+
+.header_menu {
+  height: 90px;
+  grid-column: 2 / 3;
+}
+
+/*грид-контейнер для разделов меню внутри шапки*/
+.header_list {
+  display: grid;
+  grid-template-columns: repeat(4, 287px);
+  grid-template-rows: 1fr;
+  justify-items: start;
+  background-color: pink;
+}
+
+/*элементы меню (элементы грид-контейнера) шапки*/
+.header_list li {
+  display: flex;
+  border-left: 1px solid #000000;
+  padding: 30px 0px 35px 13px;
+  width: 100%;
+  max-width: 274px;
+  background: red;
+}
+
+/*убираем левую границу у первого элемента меню шапки, чтобы сохранить линейки*/
+.header_list li:first-child {
+  border-left: none;
+}
+
+/*задаем стили элементу меню (разделу) внутри шапки*/
+.header_link {
+  font-family: Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+}
