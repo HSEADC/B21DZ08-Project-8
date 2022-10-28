@@ -6,7 +6,243 @@
     <analytics></analytics>
   </head>
 
-  <body class="index">
-    <p>text</p>
+  <body>
+    <!-- Оболочка -->
+    <div class="wrapper">
+      <!-- Шапка (grid-элемент + grid-контейнер)-->
+      <header class="header">
+        <div class="header_logo">
+          <a href="#">
+            <img src="#" alt="Логотип" />
+          </a>
+        </div>
+        <nav class="header_menu">
+          <ul class="header_list">
+            <li>
+              <a href="#" class="header_link">Игры</a>
+            </li>
+            <li>
+              <a href="#" class="header_link">История игр</a>
+            </li>
+            <li>
+              <a href="#" class="header_link">Студии</a>
+            </li>
+            <li>
+              <a href="#" class="header_link">Приставки</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Основное содержимое -->
+      <main class="main">
+        <!-- обложка -->
+        <section class="content_cover">
+          <h1 class="content_cover_title">О ретро играх<br />80 — 00</h1>
+          <img class="content_cover_image" src="#" alt="Обложка" />
+        </section>
+        <!-- общая секция с контентом, родитель для двух колонок со статьями -->
+        <div class="content">
+          <!-- левая колонка со статьями внутри контента -->
+          <div class="left-column column">
+            <!-- тут зачем-то блок для статей внутри колонки? -->
+            <div class="article-block article-block--first">
+              <!-- карточка 1 -->
+              <div class="article article--first">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Название статьи вот такой длины ля-ля-ля</h2>
+                  <p>5-7 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 2 -->
+              <div class="article article--second">
+                <!-- ссылка с переходом на статью -->
+                <a href="#"></a>
+              </div>
+              <!-- карточка 3 -->
+              <div class="article article--third">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>
+                    This title is in English since we are too lazy to translate
+                  </h2>
+                  <p>больше 7 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- правая колонка со статьями внутри контента -->
+          <div class="right-column column">
+            <!-- тут зачем-то блок для статей внутри колонки? -->
+            <div class="article-block article-block--second">
+              <!-- карточка 4 -->
+              <div class="article article--fouth">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Среднестатистическое название</h2>
+                  <p>больше 7 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 5 -->
+              <div class="article article--fifth">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Эта статья называется в 3 строки</h2>
+                  <p>до 5 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 6 -->
+              <div class="article article--sixth">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Очень длинное и очень умное название статьи</h2>
+                  <p>до 5 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 7 -->
+              <div class="article article_seventh">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>до 5 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 8 -->
+              <div class="article article_eighth">
+                <!-- статья оборачивается в ссылку -->
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>до 5 минут</p>
+                  <!-- иконка раскрытия статьи -->
+                  <svg
+                    class="arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5 17.7929L18.5 1.00004L19.5 1.00004L19.5 19.5L0.999999 19.5L0.999999 18.5L17.7929 18.5L0.646446 1.35359L1.35355 0.646484L18.5 17.7929Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- карточка 9 -->
+              <div class="article article_ninth">
+                <!-- ссылка с переходом на статью -->
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- вторая общая секция с контентом, родитель для двух колонок со статьями -->
+      </main>
+      <!-- Футер -->
+      <footer class="footer">
+        <h2>Пиши нам!</h2>
+      </footer>
+    </div>
   </body>
 </html>

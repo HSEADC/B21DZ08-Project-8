@@ -1,0 +1,154 @@
+.main {
+  grid-area: main;
+  background-color: pink;
+}
+
+/*задаем стили обложки*/
+.content_cover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 899px;
+}
+
+/*делаем оболочку для двух колонок флекс элементом*/
+.content {
+  display: flex;
+}
+
+/*задаем ширину для каждой из колонок внутри оболочки content*/
+.column {
+  width: 50%;
+}
+
+/*делаем из содержимого колонки (article-block) грид-элемент и задаем ему обводку*/
+.article-block {
+  display: grid;
+  border: 1px solid #000000;
+}
+
+/*у содержимого левой колонки (уже грид-элемента) настроиваем лейаут: делим
+на 2 колонки и 2 ряда, задаем колонкам ширину, рядам высоту
+убираем правую границу*/
+.article-block--first {
+  grid-template-columns: 33.5% 66.5%;
+  grid-template-rows: 502px 251px;
+  border-right: none;
+}
+
+/*у содержимого правой колонки (уже грид-элемента) настроиваем лейаут: делим
+на 3 колонки и 3 ряда, задаем колонкам ширину, рядам высоту
+убираем левую границу*/
+.article-block--second {
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: repeat(3, 251px);
+  border-left: none;
+}
+
+/*задаем каждой статье обводку и относительное положение элемента.
+Теперь положение устанавливается относительно его исходного места.
+Добавление свойств left, top, right и bottom изменяет позицию элемента
+и сдвигает его в ту или иную сторону от первоначального расположения.*/
+.article {
+  outline: 0.5px solid #000000;
+  position: relative;
+}
+
+/*задаем каждой иконке раскрытия внутри каждой статьи абсолютное позиционирование.
+На положение влияет значение свойства position родительского элемента.
+Если у родителя значение position задано как fixed, relative или absolute,
+то отсчет координат ведется от края родительского элемента.
+Прописываем расстояние от нижнего и правого края*/
+.article .arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/*Теперь каждой статье назначаем лейаут:
+расшифровывается как grid-area: row-start / col-start / row-end / col-end;
+-1 у article--first это
+*/
+
+.article--first {
+  grid-area: 1 / 1 / 1 / -1;
+}
+
+.article--second {
+  grid-area: 2 / 1 / 3 / 2;
+  background: green;
+}
+
+.article--third {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.article--fouth {
+  grid-area: 1 / 1 / 1 / 3;
+}
+
+.article--fifth {
+  grid-area: 1 / 3 / 1 / -1;
+  background: red;
+}
+
+.article--sixth {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.article--seventh {
+}
+
+.article--eighth {
+}
+
+.article_ninth {
+  grid-area: 2 / 2 / 3 / -1;
+  background: blue;
+}
+
+.article-block a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-decoration: none;
+  color: #222;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 196px;
+  line-height: 240px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.article h2 {
+  font-family: Helvetica;
+  font-size: 33px;
+  max-width: 500px;
+  line-height: 44px;
+  font-weight: 300;
+  margin: 0;
+  padding: 21px 0px 0 15px;
+}
+
+.footer h2 {
+  font-family: Helvetica;
+  font-size: 33px;
+  max-width: 500px;
+  line-height: 44px;
+  font-weight: 300;
+  margin: 0;
+  padding: 21px 0px 0 15px;
+}
+
+.article p {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0px 14px 17px;
+}

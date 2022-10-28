@@ -1,0 +1,17 @@
+.footer {
+  grid-area: footer;
+  background-color: pink;
+  height: 289px;
+
+  font-size: 20;
+
+  h2 {
+    font-family: Helvetica;
+    font-size: 33px;
+    max-width: 500px;
+    line-height: 44px;
+    font-weight: 300;
+    margin: 0;
+    padding: 21px 0px 0 15px;
+  }
+}
