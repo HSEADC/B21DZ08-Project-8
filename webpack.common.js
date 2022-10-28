@@ -98,7 +98,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/about_us.html',
-      filename: './about_us.html'
+      filename: './about_us.html',
+      chunks: ['index']
     }),
 
     // Partials
