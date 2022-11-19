@@ -7,7 +7,8 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   watch: true,
   devServer: {
-    static: './dev_build'
+    static: './dev_build',
+    allowedHosts: ['bf6d-212-96-69-159.eu.ngrok.io'],
   },
   output: {
     path: path.resolve(__dirname, 'dev_build')
