@@ -33,7 +33,7 @@ header {
         color: white;
       }
     }
-
+    //
     .logoContainer {
       display: flex;
       height: 59px;
@@ -43,7 +43,7 @@ header {
       .logo {
         width: 100px;
         height: 30px;
-        
+
         @include wireframe;
       }
     }
